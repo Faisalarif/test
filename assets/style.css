@@ -1,0 +1,312 @@
+
+/****General****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: "Signika Negative", sans-serif; 
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.font-extra-large {
+    font-size: clamp(42px,-6.5915492958px + 9.7183098592vw,180px);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.font-large {
+    font-size: clamp(36px,-6.5915492958px + 9.7183098592vw,56px);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.font-medium {
+    font-size: clamp(26px,-6.5915492958px + 9.7183098592vw,36px);
+}
+
+.color-black {
+    color:#000;
+}
+
+.d-flex {
+    display: flex;
+} 
+.f-align-center {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.f-d-column {
+    flex-direction: column;
+}
+.h-100-vh {
+    height: 100vh;
+}
+.h-100 {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.cr-container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.p-relative {
+    position: relative;
+}
+
+
+.font-bold {
+    font-weight: 800;
+}
+
+.d-block {
+    display: block;
+} 
+
+.text-cetner {
+    text-align: center;
+}
+
+.bg-dark {
+    background-color: #000;
+}
+
+/***Section Logo***/
+
+.cr-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    padding: 0 120px;
+}
+
+.cr-logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*** Verticle Lines and boxes ***/
+
+.v-line-container {
+    height: 35%;
+    width: 100%;
+    position: absolute;
+    border: none;
+}
+
+.v-box-container1 {
+    height: 35%;
+    width: 100%;
+    position: absolute;
+    border: none;
+}
+
+.v-box-container {
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    border: none;
+}
+
+.botttom {
+    bottom: 0;
+}
+
+.top {
+    top:0;
+}
+
+.cr-v-line-cetner-bottem {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0;
+    width: 2px;
+    background-color: #000;
+    top: 0;
+}
+
+.cr-v-line-cetner-top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0;
+    width: 2px;
+    background-color: #fff;
+    top: 0;
+}
+
+.cr-bottom-line-2 {
+    right: 0;
+    position: absolute;
+    height: 2px;
+    background-color: #fff;
+    width: 0;
+}
+
+.cr-bottom-angel-line1 {
+    position: absolute;
+    right: 20%;
+    background-color: #fff;
+    width: 2px;
+    transform: rotate(30deg);
+    transform-origin: top left;
+    top: 0;
+}
+
+.cr-top-line-2 {
+    left: 0;
+    position: absolute;
+    height: 2px;
+    background-color: #000;
+    width: 0;
+}
+
+.cr-top-angel-line2 {
+    position: absolute;
+    left: 45%;
+    background-color: #000;
+    width: 2px;
+    transform: rotate(30deg);
+    transform-origin: top left;
+    top: -345px;
+    height: 0px;
+}
+
+.cr-animation-box, .cr-animation-box-t1, .cr-animation-box-b2, .cr-animation-box-t3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0;
+    width: 90px;
+    background-color: #000;
+    top: 0;
+}
+
+.v-text {
+    color: #000;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    line-height: 1.5;
+    padding: 10px;
+    word-break: break-word;
+}
+
+.v-text span {
+    font-size: clamp(36px,-6.5915492958px + 9.7183098592vw,56px);
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bottom-nav-wrapper {
+    position: absolute;
+    bottom: 30px;
+}
+
+.bottom-nav-wrapper .f-2ocls-center {
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Space between the lines */
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 50px 0;
+}
+
+footer > div >  div {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .go-up svg {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+footer .cr-share svg {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+footer .copy-right, footer .copy-right span{
+    color: #727272;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.text-animtation-1, .text-animtation-2 {
+    text-transform: lowercase;
+}
+
+.text-animation-reverse {
+    position: absolute; /* Absolute position for animation */
+    top: 0;
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 3rem;
+    color: #000;
+}
+
+.cursor-blinking {
+    width: 1px;
+    height: 85%;
+    background-color: #000;
+    position: absolute;
+    right: -5px;
+    top: 2px;
+}
+
+.cursor {
+    display: inline-block;
+    opacity: 0;
+    color: #333;
+}
+
+.active {
+    opacity: 1;
+    animation: blink 0.5s infinite;
+}
+
+.cursor::after {
+    display: inline-block;
+    content: '';
+    width: 2px;
+    background-color: #000;
+    height: 40px;
+}
+
+/* Optional: Blinking effect for cursor */
+    @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
